@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+            font-family: Arial;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            margin-top: 50px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .notes {
+            margin-top: 20px;
+        }
+
+        .note {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .actions {
+            margin-top: 10px;
+        }
+
+        .actions button {
+            margin-right: 5px;
+        }
+</style>
+<body>
+    <div class="container">
+        <textarea id="noteInput" placeholder="Write your notes here..." rows="10" cols="50"></textarea>
+    <button id="addBtn" >Add Note</button>
+    <div class="notes">
+        
+    </div>
+    </div>
+</body>
+<script src="notes.js"></script>
+</html>
