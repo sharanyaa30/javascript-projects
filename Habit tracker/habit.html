@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    .habit {
+        display: flex;
+        gap: 10px;
+    }
+
+    input {
+        padding: 8px;
+        flex: 1;
+    }
+
+    button {
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .habits-list {
+        margin-top: 20px;
+    }
+
+    .habit-item {
+        background: #eee;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="habit">
+            <input class="habit-input" type="text" placeholder="Enter your habit">
+            <button class="add-habit-btn">Add Habit</button>
+        </div>
+        <div class="habits-list"></div>
+
+    </div>
+</body>
+<script src="habit.js"></script>
+</html>
