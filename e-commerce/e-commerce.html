@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        background: rgb(218, 140, 140);
+        padding: 20px;
+        border-radius: 10px;
+        width: 500px;
+        margin-top: 200px;
+        
+    }
+    .item {
+        background: rgb(244, 220, 220);
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <div class="products">
+            <div class="item">
+                <h2>Product 1</h2>
+                <p>Price: $10</p>
+                <button data-name="Product 1" data-price="10">Add to Cart</button>
+            </div>
+            <div class="item">
+                <h2>Product 2</h2>
+                <p>Price: $20</p>   
+                <button data-name="Product 2" data-price="20">Add to Cart</button>
+            </div>
+            <div class="item">
+                <h2>Product 3</h2>
+                <p>Price: $30</p>
+                <button data-name="Product 3" data-price="30">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cart"></div>
+        <h2 class="total">Total: $0</h2>
+    </div>
+</body>
+<script src="e-commerce.js"></script>
+</html>
