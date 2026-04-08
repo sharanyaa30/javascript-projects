@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        background: rgb(85, 214, 156);
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    .time {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .section {
+        display: flex;
+        gap: 10px;
+    }
+
+    input {
+        padding: 8px;
+        flex: 1;
+    }
+
+    button {
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .task-list {
+        margin-top: 20px;
+    }
+
+    .task-item {
+        background: #d2ef75;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="time">
+        <h2 class="timer">00:00</h2>
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+        <button class="reset">Reset</button>
+        </div>
+        <div class="section">
+            <input type="text" class="task" placeholder="enter task">
+            <button class="add">Add Task</button>
+            
+        </div>
+        <div class="task-list"></div>
+        <div class="stats">
+            Sessions Completed: <span class="sessions">0</span>
+            <button class="clear">Clear completed</button>
+        </div>
+    </div>
+</body>
+<script src="focus.js"></script>
+</html>
