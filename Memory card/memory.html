@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial;
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        background: rgb(11, 2, 46);
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    .card{
+        background: #fa7575;
+        height: 80px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" data-value="1">?</div>
+        <div class="card" data-value="2">?</div>
+        <div class="card" data-value="3">?</div>
+        <div class="card" data-value="4">?</div>
+        <div class="card" data-value="5">?</div>
+        <div class="card" data-value="6">?</div>
+        <div class="card" data-value="1">?</div>
+        <div class="card" data-value="2">?</div>
+        <div class="card" data-value="3">?</div>
+        <div class="card" data-value="4">?</div>
+        <div class="card" data-value="5">?</div>
+        <div class="card" data-value="6">?</div>
+        <div class="moves">Moves: 0</div>
+        <button class="restart">Restart</button>
+    </div>
+</body>
+<script src="memory.js"></script>
+</html>
