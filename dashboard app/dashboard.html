@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+        background: #2b4486;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        background: rgb(119, 150, 194);
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    .search {
+        padding: 8px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .weather {
+        text-align: center;
+    }
+
+    .searches {
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <input class="search" type="text" placeholder="Search...">
+        <button class="search-btn">Search</button>
+        <div class="weather">
+            <h2 class="city"></h2>
+            <p class="temp"></p>
+            <p class="loading"></p>
+            <p class="condition"></p>
+        </div>
+        <ul class="searches">
+            <h3>Recent Searches:</h3>
+            <ul class="search-list"></ul>
+        </ul>
+    </div>
+</body>
+<script src="dashboard.js"></script>
+</html>
