@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+            font-family: Arial;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            margin-top: 50px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+
+        }
+        .search{
+            margin-top: 20px;
+        }
+        .btn-serach{
+            width: 50%;
+            margin-top: 20px;
+        }
+
+</style>
+<body>
+    <div class="container">
+        <textarea class="note-input"></textarea>
+        <button class="submit">Add note</button>
+        <input type="text" placeholder="Search notes.." class="search">
+        <!-- <button class="btn-serach">serach</button> -->
+        <div class="notes-list"></div>
+    </div>
+</body>
+<script src="AI_Notes.js"></script>
+</html>
