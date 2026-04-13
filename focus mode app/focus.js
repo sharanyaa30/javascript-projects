@@ -43,7 +43,7 @@ function renderTasks() {
         let div = document.createElement('div')
         div.className = 'task-item'
         let span = document.createElement('span')
-        span.textContent = task.text
+        span.textContent = 'task.text'
         
         
         let completeBtn = document.createElement('button')
