@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            font-family: Arial;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .chat {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+        .input-area {
+            display: flex;
+            gap: 10px;
+        }
+
+        .input {
+            flex: 1;
+            padding: 10px;
+        }
+        .message {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+.user {
+    background: #4CAF50;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot {
+    background: #e0e0e0;
+    color: black;
+    align-self: flex-start;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="chat"></div>
+        <div class="input-area">
+            <input type="text" class="input" placeholder="Type a message...">
+            <button class="send">send</button>
+        </div>
+        </div>
+</body>
+<script src="chat.js"></script>
+</html>
