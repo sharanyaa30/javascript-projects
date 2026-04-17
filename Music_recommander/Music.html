@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    font-family: Arial;
+    display: flex;  
+    justify-content: center;
+    margin-top: 50px;
+    background: #f0f0f0
+    }
+    .container{
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+    }
+    button{
+        padding: 8px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .moods{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:20px;
+}
+
+.results{
+    margin-top:20px;
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    min-height:100px;
+    text-align:left;
+}
+.song-card{
+    background:#f7f7f7;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>How are u feeling today</h1>
+        <div class="moods">
+            <button class="happy">Happy</button>
+            <button class="sad">sad</button>
+            <button class="focus">focus</button>
+            <button class="chill">chill</button>
+
+        </div>
+        <div class="results"></div>
+        <div class="favorites"></div>
+
+    </div>
+</body>
+<script src="Music.js"></script>
+</html>
