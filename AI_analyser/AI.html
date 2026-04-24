@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .resume-input {
+        width: 100%;
+        height: 200px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .analyze-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .analyze-btn:hover {
+        background-color: #0056b3;
+    }
+    .result {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+</style>
+<body>
+    <textarea class="resume-input" placeholder="place ur resume...."></textarea>
+    <button class="analyze-btn">Analyze resume</button>
+    <div class="result"></div>
+</body>
+<script src="AI.js"></script>
+</html>
